@@ -1,0 +1,66 @@
+/**Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sanchez&display=swap');
+
+:root {
+    background-color: #0098DA;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Sanchez', sans-serif;
+}
+
+h1
+{
+    font-size: 5.4rem;
+    color: #76EE3E;
+    margin-bottom: 5rem;
+}
+
+h2
+{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center
+{
+    justify-content: center;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.hidden
+{
+    display: none;
+}
