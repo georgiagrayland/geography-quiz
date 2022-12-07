@@ -74,8 +74,8 @@ h2
     margin-bottom: 1rem;
     text-decoration: none;
     color: white;
-    background: rgb(4,11,247);
-    background: radial-gradient(circle, rgba(4,11,247,1) 61%, rgba(162,24,218,1) 100%);
+    background: rgb(4,14,70);
+    background: radial-gradient(circle, rgba(4,14,70,1) 76%, rgba(24,62,218,1) 100%);
     border-radius: 5px;
 }
 
@@ -84,11 +84,30 @@ h2
     cursor: pointer;
     transition: transform 150ms;
     transform: scale(1.03);
+    box-shadow: 22px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.btn
+.btn[disabled]:hover
 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
+
+#highscore-btn
+{
+    background: rgb(195,35,34);
+    background: linear-gradient(0deg, rgba(195,35,34,1) 0%, rgba(255,211,0,1) 100%);
+}
+
+#highscore-btn:hover
+{
+    box-shadow: 22px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.fa-crown
+{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
