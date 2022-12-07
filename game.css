@@ -8,6 +8,8 @@ body
 
 .container{
     background: #BFFFA1;
+    height: fit-content;
+    width: 100%;
 }
 .choice-container
 {
@@ -22,13 +24,34 @@ body
     font-family: "ABeeZee", sans-serif;
 }
 
+.hud-prefix
+{
+    padding-top: 10px;
+}
+
+.hud-prefix, #score
+{
+    font-size: 4.5rem;
+    color: #000078;
+    padding-right: 10px;
+}
+
 #question
 {
     font-family: "ABeeZee", sans-serif;
     color: #000078;
+    font-size: 4rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /** Styling of answer choices */
+
+.choice-container
+{
+    width: 100%;
+}
+
 .choice-container:hover
 {
     cursor: pointer;
