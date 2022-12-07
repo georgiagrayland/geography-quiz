@@ -1,3 +1,6 @@
+/**Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sanchez&display=swap');
+
 body
 {
     color: #080E82;
@@ -16,10 +19,12 @@ body
     font-size: 3rem;
     min-width: 80rem;
     background-color: #080E82;
+    font-family: "ABeeZee", sans-serif;
 }
 
 #question
 {
+    font-family: "ABeeZee", sans-serif;
     color: #000078;
 }
 
