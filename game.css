@@ -18,6 +18,11 @@ body
     background-color: #080E82;
 }
 
+#question
+{
+    color: #000078;
+}
+
 /** Styling of answer choices */
 .choice-container:hover
 {
@@ -71,12 +76,18 @@ body
 {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid #0059FF;
+    border: 0.2rem solid #0000FF;
     margin-top: 2rem;
     border-radius: 60px;
     overflow: hidden;
 }
 
+#progress-bar-full
+{
+    height: 100%;
+    background-color: #0000FF;
+    width: 0%;
+}
 
 /** Media Queries for different screen sizes*/
 
