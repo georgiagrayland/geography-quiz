@@ -1,0 +1,42 @@
+body
+{
+    color: #080E82;
+}
+
+.container{
+    background: #BFFFA1;
+}
+.choice-container
+{
+    color: white;
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 3rem;
+    min-width: 80rem;
+    background-color: #080E82;
+}
+
+/** Styling of answer choices */
+.choice-container:hover
+{
+    cursor: pointer;
+    box-shadow: 22px -19px 48px -3px rgba(0,0,0,0.75);
+    transform: scale(1.02);
+    transition: transform 100ms;
+}
+
+.choice-prefix
+{
+    padding: 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text
+{
+    padding: 2rem;
+    width: 100%;
+}
+
+/** Media Queries for different screen sizes*/
