@@ -122,6 +122,12 @@ h2
     max-width: 50rem;
 }
 
+#score-title
+{
+    font-size: 4rem;
+    color: #0015A0;
+}
+
 input
 {
     margin-bottom: 1rem;
