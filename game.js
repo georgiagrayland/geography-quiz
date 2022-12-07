@@ -96,7 +96,7 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 4;
 
-startGame = () => {
+function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -114,7 +114,7 @@ function getNewQuestion() {
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
-    const questionsIndex = Math.floor(Math.random() = availableQuestions.length);
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
@@ -150,3 +150,10 @@ choices.forEach(choice => {
         }, 1000);
     });
 })
+
+incrementScore = num => {
+    score +=num;
+    scoreText.innerText = score;
+}
+
+startGame();
