@@ -111,3 +111,35 @@ h2
     margin-left: 1rem;
 }
 
+/** End page styles */
+
+.end-form-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+}
+
+input
+{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: 1.5px solid black;
+    border-radius: 6px;
+    /** Add border shadow??*/
+}
+
+input::placeholder
+{
+    color: #5FAC9E;
+}
+
+#username
+{
+    margin-bottom: 3rem;
+    width: 100%;
+}
