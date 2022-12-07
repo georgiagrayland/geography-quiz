@@ -3,14 +3,16 @@
 
 body
 {
-    color: #080E82;
+    background-image: url(/assets/images/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
     background: #BFFFA1;
-    height: fit-content;
     width: 100%;
 }
+
 .choice-container
 {
     color: white;
