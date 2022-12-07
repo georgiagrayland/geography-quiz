@@ -4,7 +4,7 @@ const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progress-bar-full');
 
-let currentQuestion = {}
+let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
@@ -91,10 +91,10 @@ let questions = [
         choice4: "Damascus",
         answer: 4,
     }
-]
+];
 
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 10;
 
 function startGame() {
     questionCounter = 0;
@@ -110,7 +110,7 @@ function getNewQuestion() {
         return window.location.assign('/end.html');
     }
 
-    questionCounter++
+    questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
@@ -130,7 +130,7 @@ function getNewQuestion() {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
+        if(!acceptingAnswers) return
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -138,22 +138,22 @@ choices.forEach(choice => {
         
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        if(classToApply === 'correct'){
+        if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
-        };
+        }
 
-        selectedAnswer.parentElement.classList.add(classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
     });
-})
+});
 
-incrementScore = num => {
+function incrementScore (num) {
     score +=num;
     scoreText.innerText = score;
-}
+};
 
 startGame();
