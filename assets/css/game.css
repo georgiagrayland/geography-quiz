@@ -14,7 +14,8 @@ body
 
 #game
 {
-    background: #BFFFA1;
+    background-color: #F8EAA2;
+    /**background: #BFFFA1;*/
     width: 1000px;
     border-radius: 5px;
     padding-bottom: 20px;
@@ -78,13 +79,17 @@ body
 
 .correct
 {
-    background-color: #B0FF49;
+    background-color: #CAF8C6;
+    border: 10px solid #152F07;
     color: black;
+    font-size: 3.6rem;
 }
 
 .incorrect
 {
-    background: #FF0000;
+    color: black;
+    background-color: #FDD2DA;
+    border: 10px solid #FF0000;
 }
 
 /** Heads up display */
