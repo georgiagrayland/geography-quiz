@@ -1,3 +1,6 @@
+/**Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sanchez&display=swap');
+
 body
 {
     background-color: #FFF6A5;
@@ -5,13 +8,15 @@ body
 
 #finalScore
 {
-    color: black;
+    color: #B0FF49;
 }
 
-#high-scores-lise
+#high-scores-list
 {
+    font-family: 'ABeeZee', sans-serif;
     list-style: none;
     margin-bottom: 4rem;
+    color: #FFD500;
 }
 
 .high-score
