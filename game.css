@@ -8,10 +8,9 @@ body
     background-size: cover;
 }
 
-/**.container{
-    background: #BFFFA1;
+ container{
     width: 100%;
-}*/
+ }
 
 #game
 {
@@ -25,11 +24,11 @@ body
 {
     color: white;
     display: flex;
+    margin: 0 auto;
     margin-bottom: 0.8rem;
-    width: 90%;
+    width: 98%;
     border-radius: 5px;
     font-size: 3rem;
-    min-width: 80rem;
     background-color: #080E82;
     font-family: "ABeeZee", sans-serif;
 }
@@ -56,11 +55,6 @@ body
 }
 
 /** Styling of answer choices */
-
-.choice-container
-{
-    width: 100%;
-}
 
 .choice-container:hover
 {
@@ -132,7 +126,19 @@ body
 
 @media screen and (max-width: 768px) 
 {
-    .choice-container{
-        min-width: 40rem;
+    .container
+    {
+        max-width: 100%;
+    }
+
+    #game {
+        max-width: 100%;
+    }
+
+    .choice-container
+    {
+        max-width: 98%;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }
