@@ -1,17 +1,21 @@
+//Collecting the elements needed 
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progress-bar-full');
 
+//Game variables
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+
+//Setting questions
 let questions = [
-    {//question 1
+    {
         question: "What is the Capital City of the USA?",
         choice1: "New York City",
         choice2: "Washington D.C.",
@@ -96,6 +100,8 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
+
+//Set the parameters at the start of the game
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -103,6 +109,8 @@ function startGame() {
     getNewQuestion();
 }
 
+
+//Looping through questions list and incrementing progress 
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -151,6 +159,8 @@ choices.forEach(choice => {
     });
 });
 
+
+//Incrementing score
 function incrementScore (num) {
     score +=num;
     scoreText.innerText = score;

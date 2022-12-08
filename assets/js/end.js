@@ -1,3 +1,4 @@
+//Collecting elements needed 
 const username = document.querySelector('#username');
 const saveScoreBtn = document.querySelector('#save-score');
 const finalScore = document.querySelector('#final-score');
@@ -13,6 +14,7 @@ username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value;
 });
 
+//Saving scores for the leaderboard section
 saveHighScore = e => {
     e.preventDefault();
 
