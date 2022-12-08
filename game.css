@@ -76,8 +76,8 @@ body
 
 .correct
 {
-    background: rgb(9,54,21);
-    background: linear-gradient(90deg, rgba(9,54,21,1) 26%, rgba(26,112,0,1) 57%, rgba(0,0,0,1) 72%, rgba(1,6,1,0.8954175420168067) 91%);
+    background-color: #B0FF49;
+    color: black;
 }
 
 .incorrect
