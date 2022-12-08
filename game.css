@@ -8,9 +8,17 @@ body
     background-size: cover;
 }
 
-.container{
+/**.container{
     background: #BFFFA1;
     width: 100%;
+}*/
+
+#game
+{
+    background: #BFFFA1;
+    width: 1000px;
+    border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 .choice-container
@@ -18,7 +26,7 @@ body
     color: white;
     display: flex;
     margin-bottom: 0.8rem;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     font-size: 3rem;
     min-width: 80rem;
@@ -42,7 +50,7 @@ body
 {
     font-family: "ABeeZee", sans-serif;
     color: #000078;
-    font-size: 4rem;
+    font-size: 3.1rem;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -70,7 +78,7 @@ body
 
 .choice-text
 {
-    padding: 2rem;
+    padding: 1.9rem;
     width: 100%;
 }
 
@@ -94,7 +102,7 @@ body
 .hud-prefix
 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .hud-main-text
@@ -104,10 +112,11 @@ body
 
 #progress-bar
 {
-    width: 20rem;
+    width: 25rem;
     height: 3rem;
     border: 0.2rem solid #0000FF;
-    margin-top: 2rem;
+    margin-top: 1.8rem;
+    margin-left: 20px;
     border-radius: 60px;
     overflow: hidden;
 }
