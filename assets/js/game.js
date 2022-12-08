@@ -47,7 +47,7 @@ let questions = [
         choice4: "Sutherland Falls",
         answer: 3,
     },
-    {//question 5
+    {
         question: "What is the highest country (by elevation) in the world?",
         choice1: "Bhutan",
         choice2: "China",
@@ -55,7 +55,7 @@ let questions = [
         choice4: "Switzerland",
         answer: 1,
     },
-    {//question 6 
+    {
         question: "Which is the second most populous country in the world?",
         choice1: "Russia",
         choice2: "India",
@@ -63,7 +63,7 @@ let questions = [
         choice4: "Germany",
         answer: 2,
     },
-    {//question 7
+    {
         question: "Which sea separates Europe and Africa?",
         choice1: "The Baltic Sea",
         choice2: "The Dead Sea",
@@ -71,7 +71,7 @@ let questions = [
         choice4: "The Mediterranean Sea",
         answer: 4,
     },
-    {//q8
+    {
         question: "What is Earth's approximate water to land ratio?",
         choice1: "71:29",
         choice2: "55:45",
@@ -79,7 +79,7 @@ let questions = [
         choice4: "87:13",
         answer: 1,
     },
-    {//q9
+    {
         question: "Which country has the greatest number of international land borders?",
         choice1: "Indonesia",
         choice2: "France",
@@ -87,7 +87,7 @@ let questions = [
         choice4: "Cameroon",
         answer: 3,
     },
-    {//question 10 
+    {
         question: "What is the oldest city on earth?",
         choice1: "London",
         choice2: "Rome",
@@ -138,7 +138,7 @@ function getNewQuestion() {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -164,6 +164,6 @@ choices.forEach(choice => {
 function incrementScore (num) {
     score +=num;
     scoreText.innerText = score;
-};
+}
 
 startGame();

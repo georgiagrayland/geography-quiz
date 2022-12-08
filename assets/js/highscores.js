@@ -5,5 +5,5 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 //Adding list item for name and scores leaderboard
 highScoresList.innerHTML = highScores.map(score => {
-    return ` <li class="high-score">${score.name} - ${score.score}</li>`
-}).join('')
+    return ` <li class="high-score">${score.name} - ${score.score}</li>`;
+}).join('');
