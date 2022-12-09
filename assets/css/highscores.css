@@ -14,8 +14,7 @@ body
 #high-scores-list
 {
     font-family: 'ABeeZee', sans-serif;
-    list-style-image: url(../images/list-icon.png);
-    /**list-style: none;*/
+    list-style-image: url('../images/list-icon.png');
     margin-bottom: 4rem;
     color: #FCFCA0;
 }
