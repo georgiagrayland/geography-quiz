@@ -1,3 +1,5 @@
+document.body.style.backgroundImage = "url('/assets/images/end-image.jpg')";
+
 //Collecting elements needed 
 const username = document.querySelector('#username');
 const saveScore = document.querySelector('#save-score');
