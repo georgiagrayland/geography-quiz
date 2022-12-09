@@ -25,7 +25,7 @@ function showResultMessage() {
         return "Good try, although you could definitely do better";
     } else if (mostRecentScore >= 700 && mostRecentScore <= 900) {
         return "Above average, you have good knowledge but aren't a geography genius yet!";
-    } else if (mostRecentScore === 1000) {
+    } else if (mostRecentScore == 1000) {
         return "Incredible, you really know your important geography knowledge";
     }
 }
