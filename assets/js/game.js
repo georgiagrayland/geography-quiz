@@ -168,3 +168,4 @@ function incrementScore (num) {
 }
 
 startGame();
+
