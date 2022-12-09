@@ -106,12 +106,13 @@ function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    getNewQuestion();
+    nextQuestion();
 }
 
 
 //Looping through questions list and incrementing progress 
-function getNewQuestion() {
+
+function nextQuestion(){
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
@@ -154,7 +155,7 @@ choices.forEach(choice => {
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
+            nextQuestion();
         }, 1000);
     });
 });

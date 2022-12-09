@@ -1,7 +1,7 @@
 
 //Collecting elements 
 const highScoresList = document.querySelector('#high-scores-list');
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 //Adding list item for name and scores leaderboard
 highScoresList.innerHTML = highScores.map(score => {

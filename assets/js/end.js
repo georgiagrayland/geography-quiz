@@ -1,17 +1,17 @@
 //Collecting elements needed 
 const username = document.querySelector('#username');
-const saveScoreBtn = document.querySelector('#save-score');
+const saveScore = document.querySelector('#save-score');
 const finalScore = document.querySelector('#final-score');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
 
 username.addEventListener("keyup", () => {
-    saveScoreBtn.disabled = !username.value;
+    saveScore.disabled = !username.value;
 });
 
 //Saving scores for the leaderboard section
