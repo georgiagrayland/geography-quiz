@@ -76,11 +76,22 @@ h2
 
 #rules 
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 3rem;
     margin-bottom: 0.7rem;
     border-radius: 2px;
     border: 2px dashed black;
+}
+
+#rules:hover 
+{
+    background-color: #FFC2CA;
+}
+
+#show-rules
+{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .btn
