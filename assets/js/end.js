@@ -16,17 +16,17 @@ username.addEventListener("keyup", () => {
     saveScore.disabled = !username.value;
 });
 
-//Showing a message based off the end score
+/**Showing a message based off the end score*/
 
 function showResultMessage() {
     if (mostRecentScore < 400) {
-        return "enter text for bad";
+        return "Too bad, go and find your encyclopedia!";
     } else if (mostRecentScore >= 400 && mostRecentScore < 700) {
-        return "enter text here for ok";
+        return "Good try, although you could definitely do better";
     } else if (mostRecentScore >= 700 && mostRecentScore <= 900) {
-        return "enter text here for good";
+        return "Above average, you have good knowledge but aren't a geography genius yet!";
     } else if (mostRecentScore === 1000) {
-        return "enter text here for very good";
+        return "Incredible, you really know your important geography knowledge";
     }
 }
 

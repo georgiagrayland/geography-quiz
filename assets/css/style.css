@@ -132,9 +132,28 @@ h2
 
 #score-title
 {
-    font-size: 4rem;
-    color: #0015A0;
+    font-size: 3.7rem;
     color: #B0FF49;
+}
+
+#final-score
+{
+    font-size: 5.5rem;
+    color: #050505;
+}
+
+#result-message
+{
+    font-size: 3rem;
+    color: #FCFCA0;
+    padding-bottom: 10px;
+}
+
+#end-text
+{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
 }
 
 input
@@ -145,7 +164,6 @@ input
     font-size: 1.8rem;
     border: 1.5px solid black;
     border-radius: 6px;
-    /** Add border shadow??*/
 }
 
 input::placeholder
@@ -162,13 +180,6 @@ input::placeholder
 #save-score:hover
 {
     background-color: #6DD011;
-}
-
-#end-text
-{
-    font-size: 2.7rem;
-    color: #fff;
-    text-align: center;
 }
 
 .fa-house
