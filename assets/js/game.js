@@ -12,7 +12,6 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-
 //Setting questions
 let questions = [
     {
@@ -101,7 +100,7 @@ const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
 
-//Set the parameters at the start of the game
+/**Function to set the parameters at the start of the game and call first question */
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -110,7 +109,7 @@ function startGame() {
 }
 
 
-//Looping through questions list and incrementing progress 
+/**Looping through questions list and incrementing progress */
 
 function nextQuestion(){
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -161,7 +160,7 @@ choices.forEach(choice => {
 });
 
 
-//Incrementing score
+/**Incrementing score*/
 function incrementScore (num) {
     score +=num;
     scoreText.innerText = score;
