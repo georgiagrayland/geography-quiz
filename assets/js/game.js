@@ -12,6 +12,11 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+const rulesList = document.getElementById('rules');
+rulesList.addEventListener('click', function(){
+    document.getElementById("show-rules").innerText = "There will be 10 questions to answer"
+} )
+
 //Setting questions
 let questions = [
     {
