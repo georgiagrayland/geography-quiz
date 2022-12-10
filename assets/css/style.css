@@ -27,7 +27,7 @@ h1
     text-align: center;
     font-size: 5.4rem;
     color: #B0FF49;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 h2
@@ -72,6 +72,14 @@ h2
 .hidden
 {
     display: none;
+}
+
+#intro 
+{
+    text-align: center;
+    font-size: 2rem;
+    color: #B0FF49;
+    padding-bottom: 10px;
 }
 
 #rules 

@@ -85,12 +85,28 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
  - No unfixed bugs
 
 ### Deployment
+**Deploying the site to GitHub Pages**
 - This site was deployed to GitHub pages. The steps to deploy are as follows:
     - In the GitHub repository, navigate to the Settings tab.
     - From the source section drop-down menu, select the Main Branch.
     - Once the main branch has been selected, the page will be automatically refreshed with a display of the successful deployment.
 
 The Live Link can be found here: (INSERT LINK)
+
+**Forking the GitHub Repository**
+- A GitHub Repository can be forked to make a copy of the original repositiry or make changes to it without impacting the original repository:
+    - Find the original GitHub Repository. 
+    - At the top of the page to the right, under your account, click the 'Fork' button.
+    - This will create a copy of the repository in your GitHub account. 
+
+**Making a Local Clone**
+- This can be achieved by:
+    * Find the GitHub Repository.
+    * Click the 'Code' button.
+    * Copy the link shown.
+    * In Gitpod, change the directory to the location you would like the cloned directory to be located. 
+    * Type git clone, and paste the link copied before. 
+    * Press Enter to have the local cloene created. 
 
 ## Credits
 

@@ -8,18 +8,19 @@ body
     background-size: cover;
 }
 
- container{
+ .container
+ {
     width: 100%;
  }
 
 #game
 {
     background-color: #F8EAA2;
-    /**background: #BFFFA1;*/
     width: 1000px;
     border-radius: 5px;
     padding-bottom: 20px;
 }
+
 
 .choice-container
 {
@@ -125,6 +126,12 @@ body
     height: 100%;
     background-color: #0000FF;
     width: 0%;
+}
+
+#home-btn
+{
+    font-size: 1.8rem;
+    padding-left: 5px;
 }
 
 /** Media Queries for different screen sizes*/
