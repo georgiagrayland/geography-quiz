@@ -1,108 +1,114 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Geography Quiz
 
-Welcome georgiagrayland,
+This quiz is designed to test geography knowledge. There are 10 questions of varying difficulty, and once an answer has been selected, the colour of the answer bar will change to green if the correct answer has been chosen and red if an incorrect option has been selected. There is also a high scores leaderboard and an option to enter your end score into this. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+(enter amiresposnive screenshot)
 
 ------
 
-## Release History
+## Features 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Existing Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ - **Landing Page**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - On the first page there is a heading and 3 sections to interact with. There is a clearly marked button which, once clicked, will display the rules and parameters for the quiz. Underneath this there is a ‘Play’ button which will enter the quiz questions when clicked, and a ‘High Scores’ button, which will take the user to the leaderboard of the 5 most recent high scores and who obtained them. 
+    (Insert image)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    - **Rules Button:**
+    The user is invited to click this button. Once clicked, new text will appear that displays simple rules for the game and how to play. 
+    (insert image)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+ - ### Quiz Area
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    * Once the ‘Play’ button on the landing page has been clicked, the user is taken to the first question of the quiz.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+ - **Question Display**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    - The Quiz area is held in a clearly marked box, with the question in the centre, and answer options in bars underneath. 
+    - At the top of the quiz box, there is a question tracker and progress bar to notify the user how far along in the quiz they are. There is also a score counter which increments if correct answers are chosen throughout the quiz. The score counter gives 100 points per correct answer.
+    - There are 10 questions to answer in the quiz, and once an answer has been chosen, the game will automatically move to the next question until all 10 questions have been answered. 
+    ![Question Display](insert pic)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- **Answers**
+ * The answer options are marked A-D, which clearly contrasted text in the bars. 
+    * If correct answer clicked: the answer bar will turn light green with a dark green border, and the score will be incremented by 100 on the next page.
+    * If incorrect answer clicked: the answer bar will turn pink with a red border, and the score will not increase on the next page. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+   (insert pic)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- ### End of Quiz / Results Page
+    * Once the user has completed all 10 questions, the user will be displayed a message telling them they have completed the quiz. 
+    * They will see their total points generated from correct answers, with the maximum being 1000 points. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- **Result Message**
+    - Underneath total points, there is an automated message. This message varies depending on how many points were generated by the user. There is a different message if the user scores between:
+        * 0-4000 points.
+        * 4000-7000 points.
+        * 7000-9000 points.
+        * If the user answered all the questions correct and scored 1000 points, a congratulatory message will appear. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+ (results page pic)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- ### End of Quiz buttons
+    * Underneath the results message there is text inviting the user to enter their name. If they enter a name and click the ‘save’ button underneath, their score will be stored in the high scores list, which is accessible from the home page. 
+    * There is a ‘play again’ button, which will take the user back to the beginning of the quiz if clicked. 
+    * At the bottom of the page there is a ‘Homepage’ button. When clicked, this will take the user back to the initial landing page, where they can either start a new game or go to the high scores leaderboard. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+**High Scores Leaderboard**
+- On the home page, if the user clicks the ‘High Scores' button it will take them to the leaderboard page. 
+    * This section stores the most recent top 5 high scores alongside the name that was entered at the end of the quiz. 
+    * There is a clearly marked button underneath the scores list to navigate back to the homepage. 
 
-------
+   (Insert image)
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## Testing 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- All of the pages in this project are responsive on various screen sizes and maintain very similar layouts and displays. 
+- This project was tested on device sizes ranging from an iPhone 11, Ipad, and Laptops of various sizes. 
+- I have tested that all buttons and input fields are working and only accept the target data. 
+- The project has been tested on the following browsers: Chrome, Firefox, Safari. 
 
-**How will this affect me?**
+### Validator Testing
+- HTML
+    - No errors were detected when running the final result through the official HTML W3C Validator - https://validator.w3.org
+- CSS
+    - No errors were detected when passing through the Jigsaw CSS validator - https://jigsaw.w3.org/css-validator/. 
+- JavaScript
+    - No errors detected when passed through JSHint - https://jshint.com/
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Lighthouse Testing
+[Insert lighthouse score]
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Unfixed Bugs
+ - No unfixed bugs
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Deployment
+- This site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab.
+    - From the source section drop-down menu, select the Main Branch.
+    - Once the main branch has been selected, the page will be automatically refreshed with a display of the successful deployment.
 
-**So….?**
+The Live Link can be found here: (INSERT LINK)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Credits
 
-**Can I opt out?**
+### Content
+- Inspiration for some of the quiz questions was taken from the [Edsys](https://www.edsys.in/geography-quiz-for-kids-107-questions-answers/#4) website.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Code
+- I watched some walk along tutorials, and looked at online educational sources to help me understand the logic of functions that needed to be used. Code was used as demonstrated in some videos so that the functions in this project could work:
+    - Brian Design (https://www.youtube.com/@briandesign)
+    - Mitchell Hudson (https://www.youtube.com/@MitchellHudson)
+    - W3C Schools (https://www.w3schools.com/js/default.asp)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+### Media 
+- The background images was taken from [Unsplash](https://unsplash.com/)
+- Fonts taken from [Google Fonts](https://fonts.google.com/)
+- Icons used from [Fontawesome](https://fontawesome.com/)
+- Credit for Star icon on leaderboard page: Raj Dev on [Freeicons](https://freeicons.io/)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
