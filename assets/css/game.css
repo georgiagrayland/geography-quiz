@@ -135,6 +135,11 @@ body
     padding-left: 5px;
 }
 
+#home-btn:hover
+{
+    color: #Ec009d;
+}
+
 /** Media Queries for different screen sizes*/
 
 @media screen and (max-width: 768px) 
