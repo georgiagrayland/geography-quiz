@@ -2,7 +2,7 @@
 
 This quiz is designed to test geography knowledge. There are 10 questions of varying difficulty, and once an answer has been selected, the colour of the answer bar will change to green if the correct answer has been chosen and red if an incorrect option has been selected. There is also a high scores leaderboard and an option to enter your end score into this. 
 
-(enter amiresposnive screenshot)
+![Responsive Screens](/assets/images/responsive.png)
 
 ------
 
