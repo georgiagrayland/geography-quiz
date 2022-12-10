@@ -13,11 +13,12 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
  - **Landing Page**
 
     - On the first page there is a heading and 3 sections to interact with. There is a clearly marked button which, once clicked, will display the rules and parameters for the quiz. Underneath this there is a ‘Play’ button which will enter the quiz questions when clicked, and a ‘High Scores’ button, which will take the user to the leaderboard of the 5 most recent high scores and who obtained them. 
-    (Insert image)
+    
+    ![Homepage](/assets/images/homepage.png)
 
     - **Rules Button:**
     The user is invited to click this button. Once clicked, new text will appear that displays simple rules for the game and how to play. 
-    (insert image)
+    ![Rules List](/assets/images/rules-list.png)
 
  - ### Quiz Area
 
@@ -28,14 +29,15 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
     - The Quiz area is held in a clearly marked box, with the question in the centre, and answer options in bars underneath. 
     - At the top of the quiz box, there is a question tracker and progress bar to notify the user how far along in the quiz they are. There is also a score counter which increments if correct answers are chosen throughout the quiz. The score counter gives 100 points per correct answer.
     - There are 10 questions to answer in the quiz, and once an answer has been chosen, the game will automatically move to the next question until all 10 questions have been answered. 
-    ![Question Display](insert pic)
+    ![Question Display](/assets/images/question-display.png)
 
 - **Answers**
  * The answer options are marked A-D, which clearly contrasted text in the bars. 
     * If correct answer clicked: the answer bar will turn light green with a dark green border, and the score will be incremented by 100 on the next page.
-    * If incorrect answer clicked: the answer bar will turn pink with a red border, and the score will not increase on the next page. 
+    ![Correct Answer](/assets/images/correct-answer.png)
 
-   (insert pic)
+    * If incorrect answer clicked: the answer bar will turn pink with a red border, and the score will not increase on the next page. 
+    ![Incorrect Answer](/assets/images/incorrect-answer.png)
 
 - ### End of Quiz / Results Page
     * Once the user has completed all 10 questions, the user will be displayed a message telling them they have completed the quiz. 
@@ -48,7 +50,7 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
         * 7000-9000 points.
         * If the user answered all the questions correct and scored 1000 points, a congratulatory message will appear. 
 
- (results page pic)
+    ![Result Page](/assets/images/result-page.png)
 
 - ### End of Quiz buttons
     * Underneath the results message there is text inviting the user to enter their name. If they enter a name and click the ‘save’ button underneath, their score will be stored in the high scores list, which is accessible from the home page. 
@@ -60,7 +62,7 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
     * This section stores the most recent top 5 high scores alongside the name that was entered at the end of the quiz. 
     * There is a clearly marked button underneath the scores list to navigate back to the homepage. 
 
-   (Insert image)
+   ![High Scores](/assets/images/leaderboard.png)
 
 
 ## Testing 
@@ -107,7 +109,7 @@ The Live Link can be found here: (INSERT LINK)
     * Copy the link shown.
     * In Gitpod, change the directory to the location you would like the cloned directory to be located. 
     * Type git clone, and paste the link copied before. 
-    * Press Enter to have the local cloene created. 
+    * Press Enter to have the local clone created. 
 
 ## Credits
 
