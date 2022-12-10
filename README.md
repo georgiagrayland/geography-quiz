@@ -94,7 +94,7 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
     - From the source section drop-down menu, select the Main Branch.
     - Once the main branch has been selected, the page will be automatically refreshed with a display of the successful deployment.
 
-The Live Link can be found here: (INSERT LINK)
+The Live Link can be found here: https://georgiagrayland.github.io/geography-quiz/
 
 **Forking the GitHub Repository**
 - A GitHub Repository can be forked to make a copy of the original repositiry or make changes to it without impacting the original repository:
