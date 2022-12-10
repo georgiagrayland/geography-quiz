@@ -1,4 +1,3 @@
-document.body.style.backgroundImage = "url'('../images/end-image.jpg')";
 
 //Collecting elements needed 
 const username = document.querySelector('#username');
