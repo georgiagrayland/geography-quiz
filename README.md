@@ -85,7 +85,7 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
 
 ### Known Bugs and Fixes
  - The first time parsing code through JSHint came with many warnings. Most of these were corrected when changing the configuration of JSHint to eversion: 6. 
- - On the 'Enter Username' input field. A user is able to enter a space and it will still register on the high scores leaderbaord without a name if the score is high enough. 
+ - On the 'Enter Username' input field, a user is able to enter a space and it will still register on the high scores leaderbaord without a name if the score is high enough. 
 
 ### Deployment
 **Deploying the site to GitHub Pages**
@@ -124,7 +124,7 @@ The Live Link can be found here: https://georgiagrayland.github.io/geography-qui
 
 
 ### Media 
-- The background images was taken from [Unsplash](https://unsplash.com/)
+- The background images were taken from [Unsplash](https://unsplash.com/)
 - Fonts taken from [Google Fonts](https://fonts.google.com/)
 - Icons used from [Fontawesome](https://fontawesome.com/)
 - Credit for Star icon on leaderboard page: Raj Dev on [Freeicons](https://freeicons.io/)
