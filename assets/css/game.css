@@ -16,7 +16,8 @@ body
 #game
 {
     background-color: #F8EAA2;
-    width: 1000px;
+    /*width: 1000px;*/
+    width: 75rem;
     border-radius: 5px;
     padding-bottom: 20px;
 }
@@ -140,11 +141,16 @@ body
 {
     .container
     {
-        max-width: 100%;
+        width: 100%;
     }
 
     #game {
-        max-width: 100%;
+        width: 100%;
+    }
+
+    #hud
+    {
+        width: 100%;
     }
 
     .choice-container

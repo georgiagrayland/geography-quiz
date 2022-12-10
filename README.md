@@ -81,8 +81,9 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
 ### Lighthouse Testing
 [Insert lighthouse score]
 
-### Unfixed Bugs
- - No unfixed bugs
+### Known Bugs and Fixes
+ - The first time parsing code through JSHint came with many warnings. Most of these were corrected when changing the configuration of JSHint to eversion: 6. 
+ - On the 'Enter Username' input field. A user is able to enter a space and it will still register on the high scores leaderbaord without a name if the score is high enough. 
 
 ### Deployment
 **Deploying the site to GitHub Pages**
