@@ -8,7 +8,6 @@ const resultMessage = document.querySelector('#result-message');
 
 const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
-const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore;
 resultMessage.innerHTML = showResultMessage();
@@ -31,7 +30,9 @@ function showResultMessage() {
     }
 }
 
-//Saving scores for the leaderboard section
+/**Saving scores for the leaderboard section*/
+
+//The saveHighScore variable is called in the html of the end page
 saveHighScore = e => {
     e.preventDefault();
 
