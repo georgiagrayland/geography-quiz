@@ -6,6 +6,27 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
 
 ------
 
+## User Experience
+
+### User Goals
+- As a user, I want to know the rules and parameters of the quiz game. 
+- As a user, I want to know what the game is about.
+- As a user, I want to access the game easily.
+- As a user, I want to easily navigate through the game site and see all components even on the first visit.
+- As a user, I want to be able to see my result after completing the quiz.
+- As a user, I want to be able to enter the high scores leaderboard by entering my name once seeing my result.
+
+### Site Owner Goals
+- As a site owner, I want to build an intuitive, fun, and visually appealing online quiz game.
+- As a site owner, I want to build a site which is easy to navigate and accessible.
+- As a site owner, I want to build a quiz game which users will want to share. 
+
+### Design
+- Images chosen were in line with the theme, whilst also staying consistent in terms of the color scheme 
+- Colors scheme was chosen based on the theme of ‘geography’ with blue and green being typical colours of a map. 
+- Text color was chosen to contrast with the background colors to make the site readable and visually pleasing. 
+
+
 ## Features 
 
 ### Existing Features
