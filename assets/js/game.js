@@ -4,6 +4,8 @@ const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progress-bar-full');
+const timer = document.getElementById("question-timer");
+
 
 //Game variables
 let currentQuestion = {};
@@ -11,6 +13,8 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+var timeLeft = 20;
+var time = setInterval(setTimer, 1000);
 
 
 //Setting questions
@@ -107,8 +111,17 @@ function startGame() {
     score = 0;
     availableQuestions = [...questions];
     nextQuestion();
+    setTimer();
 }
 
+function setTimer(){
+    document.getElementById('question-timer').innerHTML = timeLeft;
+    timeLeft--;
+    if (timeLeft == -1) {
+        clearInterval(time)
+        alert('Time Out!');
+    }
+}
 
 /**Looping through questions list and incrementing progress */
 
@@ -167,5 +180,7 @@ function incrementScore (num) {
     scoreText.innerText = score;
 }
 
+
 startGame();
+
 
