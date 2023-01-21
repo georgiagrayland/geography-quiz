@@ -119,7 +119,7 @@ function setTimer(){
     timeLeft--;
     if (timeLeft == -1) {
         clearInterval(time)
-        alert('Time Out!');
+        timer.innerHTML = "Time is Up!";
     }
 }
 
@@ -169,6 +169,8 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             nextQuestion();
+            clearTimeout(timer);
+            timeLeft = 20;
         }, 1000);
     });
 });
