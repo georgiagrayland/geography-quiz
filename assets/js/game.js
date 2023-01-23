@@ -165,6 +165,7 @@ choices.forEach(choice => {
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
             question.innerHTML = "Correct answer, well done!";
+            question.classList.add("question")
             setTimeout(function(){
             }, 6000);
         }
