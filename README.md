@@ -4,6 +4,8 @@ This quiz is designed to test geography knowledge. There are 10 questions of var
 
 ![Responsive Screens](/assets/images/responsive.png)
 
+The live link can be found here: https://georgiagrayland.github.io/geography-quiz/
+
 ------
 
 ## User Experience
