@@ -64,6 +64,15 @@ body
     padding-right: 10px;
 }
 
+.question-correct
+{
+    color: #15600a;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 3.1rem;
+    margin-left: 15px;
+    padding-right: 10px;
+}
+
 /** Styling of answer choices */
 
 .choice-container:hover

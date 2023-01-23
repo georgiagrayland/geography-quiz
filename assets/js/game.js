@@ -162,10 +162,12 @@ choices.forEach(choice => {
         
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
+        // Increment score on correct answer 
+        // Show message depending on question answered and if answered correct or not 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
             question.innerHTML = "Correct answer, well done!";
-            question.classList.add("question")
+            question.classList.add("question");
             setTimeout(function(){
             }, 6000);
         }
