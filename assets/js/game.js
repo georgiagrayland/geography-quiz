@@ -171,9 +171,10 @@ choices.forEach(choice => {
             question.classList.add("question-correct");
             setTimeout(function(){
             }, 6000);
-        } else {
-            question.innerText = currentQuestion.message;
-            question.classList.add("question");
+        } 
+        if(selectedAnswer === 'incorrect') {
+            question.innerHTML = currentQuestion.message;
+            question.classList.add("question-incorrect");
             setTimeout(function(){
             }, 6000);
         }
