@@ -35,6 +35,7 @@ let questions = [
         choice3: "The Southern Ocean",
         choice4: "The Indian Ocean",
         answer: 1,
+        message: "Wrong answer! The Pacific is the largest, covering more than 30% of the Earth's surface",
     },
     {
         question: "Where are the Andes Mountains?",
@@ -164,7 +165,8 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
         // Increment score on correct answer 
-        // Show message depending on question answered and if answered correct or not 
+        // Show message depending on question answered
+        //Tells user correct answer if answered incorrectly
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
             question.innerHTML = "Correct answer, well done!";
@@ -173,11 +175,11 @@ choices.forEach(choice => {
             }, 6000);
         } 
         if(selectedAnswer === 'incorrect') {
-            question.innerHTML = currentQuestion.message;
+            question.innerText = currentQuestion.message;
             question.classList.add("question-incorrect");
             setTimeout(function(){
             }, 6000);
-        }
+        };
 
         selectedChoice.parentElement.classList.add(classToApply);
 
