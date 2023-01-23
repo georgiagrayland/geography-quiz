@@ -26,6 +26,7 @@ let questions = [
         choice3: "Toronto",
         choice4: "Budapest",
         answer: 2,
+        message: "Incorrect! Washington D.C is the Capital",
     },
     {
         question: "Which is the largest Ocean on Earth?",
@@ -124,7 +125,7 @@ function setTimer(){
     }
 }
 
-/** Credit for majority of NextQuestion Function: taken from Briancodex - quiz-app-js (on GitHub) */
+/** Credit for first part of NextQuestion Function: taken from Briancodex - quiz-app-js (on GitHub) */
 /**Looping through questions list and incrementing progress */
 
 function nextQuestion(){
@@ -167,6 +168,11 @@ choices.forEach(choice => {
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
             question.innerHTML = "Correct answer, well done!";
+            question.classList.add("question-correct");
+            setTimeout(function(){
+            }, 6000);
+        } else {
+            question.innerText = currentQuestion.message;
             question.classList.add("question");
             setTimeout(function(){
             }, 6000);
