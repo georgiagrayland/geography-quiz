@@ -48,6 +48,13 @@ body
     padding-right: 10px;
 }
 
+#question-timer
+{
+    font-size: 4.5rem;
+    color: #cb1390;
+    padding-right: 10px;
+}
+
 #question
 {
     font-family: "ABeeZee", sans-serif;
