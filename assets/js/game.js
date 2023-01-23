@@ -44,7 +44,8 @@ let questions = [
         choice3: "Asia",
         choice4: "South America",
         answer: 4,
-    },
+        message: "No! The Andes are on the West coast of South America",
+    }, 
     {
         question: "Which is the largest waterfall on Earth?",
         choice1: "Angel Falls",
@@ -52,6 +53,7 @@ let questions = [
         choice3: "Victoria Falls",
         choice4: "Sutherland Falls",
         answer: 3,
+        message: "Incorrect, Victoria Falls in Southern Africa is the largest!",
     },
     {
         question: "What is the highest country (by elevation) in the world?",
@@ -60,6 +62,7 @@ let questions = [
         choice3: "Peru",
         choice4: "Switzerland",
         answer: 1,
+        message: "Unlucky, the Highest country is the highest, at 8,000m above sea level"
     },
     {
         question: "Which is the second most populous country in the world?",
@@ -68,6 +71,7 @@ let questions = [
         choice3: "Brazil",
         choice4: "Germany",
         answer: 2,
+        message: "Wrong! India is the answer, with a population of 1.4 billion"
     },
     {
         question: "Which sea separates Europe and Africa?",
