@@ -140,9 +140,9 @@ The Live Link can be found here: https://georgiagrayland.github.io/geography-qui
 ### Code
 - I watched some walk along tutorials, and looked at online educational sources to help me understand the logic of functions that needed to be used. Code was used as demonstrated in some videos so that the functions in this project could work:
     - Some parts of the code were taken from a tutorial based on this project: https://github.com/briancodex/quiz-app-js. This has been accredited in the relevant parts of the code.  
-    - Brian Design (https://www.youtube.com/@briandesign)
-    - Mitchell Hudson (https://www.youtube.com/@MitchellHudson)
-    - W3C Schools (https://www.w3schools.com/js/default.asp)
+    - [Brian Design Youtube Tutorial](https://www.youtube.com/@briandesign)
+    - [Mitchell Hudson](https://www.youtube.com/@MitchellHudson)
+    - [W3C Schools](https://www.w3schools.com/js/default.asp)
 
 
 ### Media 
