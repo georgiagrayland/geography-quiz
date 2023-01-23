@@ -101,6 +101,7 @@ let questions = [
     }
 ];
 
+//Const for points for each question and maximum questions per game 
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
@@ -163,6 +164,9 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
+            question.innerHTML = "Correct answer, well done!";
+            setTimeout(function(){
+            }, 6000);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
