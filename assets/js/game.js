@@ -104,7 +104,7 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
-
+/** Credit for some of this function from: Briancodex - quiz-app-js (on GitHub) */
 /**Function to set the parameters at the start of the game and call first question */
 function startGame() {
     questionCounter = 0;
@@ -123,6 +123,7 @@ function setTimer(){
     }
 }
 
+/** Credit for majority of NextQuestion Function: taken from Briancodex - quiz-app-js (on GitHub) */
 /**Looping through questions list and incrementing progress */
 
 function nextQuestion(){
@@ -175,7 +176,7 @@ choices.forEach(choice => {
     });
 });
 
-
+/**Credit for the structure and writing of this function: Taken from Briancodex - quiz-app-js (on GitHub) */
 /**Incrementing score*/
 function incrementScore (num) {
     score +=num;

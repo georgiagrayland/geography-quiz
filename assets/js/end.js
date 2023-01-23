@@ -16,7 +16,7 @@ username.addEventListener("keyup", () => {
     saveScore.disabled = !username.value;
 });
 
-/**Showing a message based off the end score*/
+/**Showing a message based off the user's end score*/
 
 function showResultMessage() {
     if (mostRecentScore < 400) {
@@ -31,6 +31,7 @@ function showResultMessage() {
 }
 
 /**Saving scores for the leaderboard section*/
+/** Credit for code for saving high scores: taken from Briancodex - quiz-app-js (on GitHub) */
 
 //The saveHighScore variable is called in the html of the end page
 saveHighScore = e => {
