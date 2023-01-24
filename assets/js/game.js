@@ -201,8 +201,8 @@ choices.forEach(choice => {
             question.classList.add("question-correct");
             setTimeout(function(){
             }, 6000);
-        } 
-        if(selectedAnswer === 'incorrect') {
+        }
+        if(classToApply !== 'correct') {
             question.innerText = currentQuestion.message;
             question.classList.add("question-incorrect");
             setTimeout(function(){
