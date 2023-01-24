@@ -15,6 +15,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 var timeLeft = 20;
 var time = setInterval(setTimer, 1000);
+let timerId = null;
 
 
 //Setting questions
@@ -111,7 +112,8 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
 
-/** Credit for some of this function from: Briancodex - quiz-app-js (on GitHub) */
+/** Credit for some of this function from: Brian Design YouTube Tutorial- 
+ * GitHub Source for the YouTube tutorial: https://github.com/briancodex/quiz-app-js
 /**Function to set the parameters at the start of the game and call first question */
 function startGame() {
     questionCounter = 0;
@@ -121,16 +123,39 @@ function startGame() {
     setTimer();
 }
 
+/** Sets countdown timer for each question
+ * If timer runs out, calls function to move to next question
+ */
 function setTimer(){
     document.getElementById('question-timer').innerHTML = timeLeft;
     timeLeft--;
-    if (timeLeft == -1) {
-        clearInterval(time)
-        timer.innerHTML = "Time is Up!";
+        if (timeLeft == -1) {
+            //clearInterval(time)
+            timer.innerHTML = "Time is Up!";
+            //nextQuestion();
+            timeUp();
+        };
     }
+
+
+/** If the timer runs out, no points will be incremented for the question
+ * Automatically moves to the next question and marks as incorrect*/
+ 
+function timeUp() {
+    //time = setTimeout(function(){
+        //questionsIndex++;
+        //})
+    if(timeLeft == -1) {
+        question.innerHTML = "No time left on this question";
+        question.classList.add("time-up");
+        nextQuestion();
+        clearTimeout(time)
+        setTimer();
+    };
 }
 
-/** Credit for first part of NextQuestion Function: taken from Briancodex - quiz-app-js (on GitHub) */
+/** Credit for first part of NextQuestion Function: taken from Brian Design YouTube tutorial - 
+ * GitHub Source for the YouTube tutorial: https://github.com/briancodex/quiz-app-js
 /**Looping through questions list and incrementing progress */
 
 function nextQuestion(){
@@ -168,7 +193,6 @@ choices.forEach(choice => {
         
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        // Increment score on correct answer 
         // Show message depending on question answered
         //Tells user correct answer if answered incorrectly
         if(classToApply === 'correct') {
@@ -186,17 +210,20 @@ choices.forEach(choice => {
         };
 
         selectedChoice.parentElement.classList.add(classToApply);
-
+        
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             nextQuestion();
-            clearTimeout(timer);
+            setTimer();
+            //clearTimeout(timer);
             timeLeft = 20;
         }, 1000);
+        });
     });
-});
-
-/**Credit for the structure and writing of this function: Taken from Briancodex - quiz-app-js (on GitHub) */
+    
+/**Credit for the structure and writing of this function: Taken from Briancodex YouTube tutorial- 
+ * GitHub Source for the YouTube tutorial: https://github.com/briancodex/quiz-app-js
+*/
 /**Incrementing score*/
 function incrementScore (num) {
     score +=num;

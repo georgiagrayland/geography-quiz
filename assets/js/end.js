@@ -31,7 +31,8 @@ function showResultMessage() {
 }
 
 /**Saving scores for the leaderboard section*/
-/** Credit for code for saving high scores: taken from Briancodex - quiz-app-js (on GitHub) */
+/** Credit for code for saving high scores: taken from Brian Design Tutorial
+ * Source of Youtube tutorial: https://github.com/briancodex/quiz-app-js  */
 
 //The saveHighScore variable is called in the html of the end page
 saveHighScore = e => {
