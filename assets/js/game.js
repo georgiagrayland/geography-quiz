@@ -182,6 +182,7 @@ function nextQuestion(){
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
+    question.style.color = "";
 
     choices.forEach(choice => {
         const number = choice.dataset.number;
@@ -208,6 +209,7 @@ choices.forEach(choice => {
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
             question.innerHTML = "Correct answer, well done!";
+            question.style.color = "green";
             question.classList.add("question-correct");
             setTimeout(function(){
             }, 6000);
@@ -215,6 +217,7 @@ choices.forEach(choice => {
         if(classToApply !== 'correct') {
             question.innerText = currentQuestion.message;
             question.classList.add("question-incorrect");
+            question.style.color = 'red';
             setTimeout(function(){
             }, 6000);
         };

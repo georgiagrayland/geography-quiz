@@ -29,7 +29,8 @@ h1
     margin-bottom: 4rem;
 }
 
-/* Animation for title */
+/* Animation for title 
+Credit for this animation: Tobias Ahlin Moving letters - https://tobiasahlin.com/moving-letters/*/
 .ml6 {
     position: relative;
     font-weight: 900;
@@ -54,8 +55,8 @@ h1
   {
     font-size: 6rem;
   }
-/*Rest of landing page */
 
+/*Rest of landing page */
 h2
 {
     font-size: 4.2rem;

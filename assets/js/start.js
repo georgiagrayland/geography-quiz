@@ -3,6 +3,7 @@ var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 //Animation for Title Text
+// Credit for animation: Tobias Ahlin Moving letters - https://tobiasahlin.com/moving-letters/*/
 anime.timeline({loop: true})
   .add({
     targets: '.ml6 .letter',

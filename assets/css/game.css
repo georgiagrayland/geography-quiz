@@ -110,6 +110,11 @@ body
     border: 10px solid #FF0000;
 }
 
+.question-incorrect
+{
+    color: red;
+}
+
 /** Heads up display */
 #hud {
     display: flex;
