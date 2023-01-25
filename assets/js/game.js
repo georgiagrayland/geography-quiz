@@ -3,7 +3,6 @@ const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
-const timer = document.getElementById("question-timer");
 
 
 //Game variables
@@ -12,9 +11,6 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-var timeLeft = 20;
-var time = setInterval(setTimer, 1000);
-let timerId = null;
 
 
 //Setting questions
@@ -126,36 +122,47 @@ function startGame() {
     setTimer();
 }
 
-/** Sets countdown timer for each question
- * If timer runs out, calls function to move to next question
+/** Sets timer for the quiz
+ * Overall time taken for the quiz displayed to user at end
+ * Useful if playing with friends so can compare times
+ * Credit for idea and structure of the timer: Madalin on Codepen https://codepen.io/madalin_
  */
 function setTimer(){
-    document.getElementById('question-timer').innerHTML = timeLeft;
-    timeLeft--;
-        if (timeLeft == -1) {
-            //clearInterval(time)
-            timer.innerHTML = "Time is Up!";
-            //nextQuestion();
-            timeUp();
-        };
-    }
+    let timer = document.getElementById('timer');
+    let s = 0;
+    let m = 0;
+    let h = 0;
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+    
+    quizTimer = setInterval(function() {
+        s++;
 
+        if (s > 59) {
+            s = 0;
+            m++;
+            seconds = "0" + s;
+          };
 
-/** If the timer runs out, no points will be incremented for the question
- * Automatically moves to the next question and marks as incorrect*/
- 
-function timeUp() {
-    //time = setTimeout(function(){
-        //questionsIndex++;
-        //})
-    if(timeLeft == -1) {
-        question.innerHTML = "No time left on this question";
-        question.classList.add("time-up");
-        nextQuestion();
-        clearTimeout(time)
-        setTimer();
-    };
+          if (m > 59) {
+            m = 0;
+            h++;
+            minutes = "00";
+          };
+        
+          seconds = s > 9 ? s : "0" + s;
+          minutes = m > 9 ? m : "0" + m;
+          hours = h > 9 ? h : "0" + h;
+    
+          timeSpent = h 
+            ? hours + ":" + minutes + ":" + seconds
+            : minutes + ":" + seconds;
+          timer.textContent = timeSpent;
+        }, 1000);
 }
+
+
 
 /** Credit for first part of NextQuestion Function: taken from Brian Design YouTube tutorial - 
  * GitHub Source for the YouTube tutorial: https://github.com/briancodex/quiz-app-js
@@ -216,9 +223,6 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             nextQuestion();
-            setTimer();
-            //clearTimeout(timer);
-            timeLeft = 20;
         }, 1000); // Make this 5 seconds for better UX 
         });
     });
