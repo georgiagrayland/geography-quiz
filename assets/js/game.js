@@ -166,7 +166,7 @@ function nextQuestion(){
     }
 
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter} / ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -217,7 +217,7 @@ choices.forEach(choice => {
             setTimer();
             //clearTimeout(timer);
             timeLeft = 20;
-        }, 1000);
+        }, 6000); 
         });
     });
     
