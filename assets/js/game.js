@@ -109,7 +109,7 @@ let questions = [
 ];
 
 //Const for points for each question and maximum questions per game 
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 10;
 
 /** Credit for some of this function from: Brian Design YouTube Tutorial- 
