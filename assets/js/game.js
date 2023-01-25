@@ -3,6 +3,7 @@ const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
+const gameContainer = document.querySelector("#conatiner");
 
 
 //Game variables
@@ -12,6 +13,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 let timeSpent = timer.textContent;
+let colors = ['#00F800', '00E54B', '#00D4B0', '#00B7D8', '#188AF0', '#58B1A6', '#146CF6', '#C7EFE7', '#F6B472'];
 
 
 //Setting questions
@@ -162,7 +164,6 @@ function setTimer(){
           timer.textContent = timeSpent;
         }, 1000);
 }
-
 
 
 /** Credit for first part of NextQuestion Function: taken from Brian Design YouTube tutorial - 
