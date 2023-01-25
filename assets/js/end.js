@@ -5,11 +5,13 @@ const saveScore = document.querySelector('#save-score');
 const finalScore = document.querySelector('#final-score');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const resultMessage = document.querySelector('#result-message');
+const timeMessage = document.querySelector("#time-spent");
 
 const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 
 finalScore.innerText = mostRecentScore;
+timeMessage.innerText = timeSpent;
 resultMessage.innerHTML = showResultMessage();
 
 username.addEventListener("keyup", () => {
@@ -27,7 +29,7 @@ function showResultMessage() {
         return "Above average, you have good knowledge but aren't a geography genius yet!";
     } else if (mostRecentScore == 1000) {
         return "Incredible, you really know your important geography knowledge";
-    }
+    };
 }
 
 /**Saving scores for the leaderboard section*/
