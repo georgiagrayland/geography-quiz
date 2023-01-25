@@ -18,8 +18,7 @@ body
 {
     background-image: url(../images/background-image.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 h1
@@ -29,6 +28,33 @@ h1
     color: #B0FF49;
     margin-bottom: 4rem;
 }
+
+/* Animation for title */
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 6rem;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .letters
+  {
+    font-size: 6rem;
+  }
+/*Rest of landing page */
 
 h2
 {
