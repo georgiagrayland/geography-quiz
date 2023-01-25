@@ -63,7 +63,7 @@ let questions = [
         choice3: "Peru",
         choice4: "Switzerland",
         answer: 1,
-        message: "Unlucky, the Highest country is the highest, at 8,000m above sea level"
+        message: "Unlucky, Bhutan is the highest, at 8,000m above sea level"
     },
     {
         question: "Which is the second most populous country in the world?",
@@ -81,6 +81,7 @@ let questions = [
         choice3: "The North Sea",
         choice4: "The Mediterranean Sea",
         answer: 4,
+        message: "Incorrect! The Mediterranean is between Europe and Africa"
     },
     {
         question: "What is Earth's approximate water to land ratio?",
@@ -89,6 +90,7 @@ let questions = [
         choice3: "42:58",
         choice4: "87:13",
         answer: 1,
+        message: "No! 71% of Earth is covered by water, so the answer is 71:29"
     },
     {
         question: "Which country has the greatest number of international land borders?",
@@ -97,6 +99,7 @@ let questions = [
         choice3: "China",
         choice4: "Cameroon",
         answer: 3,
+        message: "Difficult one! China has the greatest, having borders with 14 other countries"
     },
     {
         question: "What is the oldest city on earth?",
@@ -105,6 +108,7 @@ let questions = [
         choice3: "Athens",
         choice4: "Damascus",
         answer: 4,
+        message: "Incorrect, Damascus is the oldest. The ancient city was founded in the 3rd Millennium B.C. "
     }
 ];
 
@@ -217,7 +221,7 @@ choices.forEach(choice => {
             setTimer();
             //clearTimeout(timer);
             timeLeft = 20;
-        }, 6000); 
+        }, 1000); // Make this 5 seconds for better UX 
         });
     });
     
