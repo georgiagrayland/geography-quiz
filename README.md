@@ -2,7 +2,7 @@
 
 This quiz is designed to test geography knowledge. There are 10 questions of varying difficulty, and once an answer has been selected, the colour of the answer bar will change to green if the correct answer has been chosen and red if an incorrect option has been selected. A message will appear to inform the user of the correct answer and its context if they answered incorrectly. There is also a timer and a score counter so players can compare these with others. A high scores leaderboard is also available to see the top 5 scores.
 
-![Responsive Screens](/assets/images/responsive.png) CHANGE THIS
+![Responsive Screens](/assets/images/amiresponsive.png) 
 
 The live link can be found here: https://georgiagrayland.github.io/geography-quiz/
 
