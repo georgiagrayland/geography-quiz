@@ -39,7 +39,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
     - There is an animation on the Heading Text which constantly loops through.
     - There is also an interactive globe animation which zooms in and out if the user scrolls over it. 
     
-    ![Homepage](/assets/images/homepage.png) CHANGE THIS 
+    ![Homepage](/assets/images/home-page.png)
 
     - **Rules Button:**
     The user is invited to click this button. Once clicked, new text will appear that displays simple rules for the game and how to play. 
@@ -64,6 +64,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
     * If correct answer clicked: the answer bar will turn light green with a dark green border, and the score will be incremented by 10 on the next page.
     * A message will appear in green text, telling the user they have answered the question correctly. 
     * The next question will automatically load after this message is shown.
+
     ![Correct Answer](/assets/images/correct-answer.png)
 
     * If incorrect answer clicked: the answer bar will turn pink with a red border, and the score will not increase on the next page. 
@@ -95,7 +96,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
     * This section stores the most recent top 5 high scores alongside the name that was entered at the end of the quiz. 
     * There is a clearly marked button underneath the scores list to navigate back to the homepage. 
 
-   ![High Scores](/assets/images/leaderboard.png)
+   ![High Scores](/assets/images/highscore.png)
 
 
 ## Testing 
@@ -114,7 +115,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
     - No errors detected when passed through JSHint - https://jshint.com/
 
 ### Lighthouse Testing
-![Lighthouse score](/assets/images/lighthouse.png)
+![Lighthouse score](/assets/images/lighthouse.png
 
 ### Known Bugs and Fixes
  - The first time parsing code through JSHint came with many warnings. Most of these were corrected when changing the configuration of JSHint to eversion: 6. 
