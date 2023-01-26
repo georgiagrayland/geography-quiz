@@ -299,7 +299,7 @@ input::placeholder
 
 @media screen and (max-width: 768px) {
 
-    input{
-        max-width: 95%;
+    #username{
+        width: 95%;
     }
 }
