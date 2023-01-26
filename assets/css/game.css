@@ -174,9 +174,16 @@ body
         width: 100%;
     }
 
+    .game-container
+    {
+        display: block;
+        max-width: 100%;
+    }
+
     .choice-container
     {
-        max-width: 98%;
+        width: 450px;
+        display: flex;
         margin: 0 auto;
         margin-bottom: 10px;
     }
