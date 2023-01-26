@@ -22,7 +22,7 @@ anime.timeline({loop: true})
 //Globe animation on home page 
 // Credit for the original version of this is Stranger in the Q on Codepen: https://codepen.io/strangerintheq/pen/zXVpQw
 var w, h, scl, is3d = true; 
-var svg = d3.select("#svgDiv").append("svg")
+var svg = d3.select("#svgDiv").append("svg");
 var projection = d3.geoOrthographic();
 
 var path = d3.geoPath().projection(projection);
@@ -65,18 +65,18 @@ let resize = () => {
     projection.translate([ w/2, h/2 ]);
     svg.attr("width", w).attr("height", h);
     map.selectAll("path").attr("d", path);
-}
+};
 
 resize();
 
-d3.select(window).on('resize', resize)
+d3.select(window).on('resize', resize);
 
 function switchProjection() {
     let s = projection.scale();
     let r = projection.rotate();
-    let c = projection.center()
+    let c = projection.center();
     if (is3d = !is3d) {
-        projection = d3.geoOrthographic()
+        projection = d3.geoOrthographic();
         projection.rotate([-c[0],-c[1]]);
     } else {
         projection = d3.geoMercator();
@@ -106,7 +106,7 @@ function dragged() {
 }
 
 function zoomed() {
-	projection.scale(d3.event.transform.translate(projection).k * scl)
+	projection.scale(d3.event.transform.translate(projection).k * scl);
 	map.selectAll("path").attr("d", path);
 }
 
@@ -224,7 +224,7 @@ function quat2euler(t){
 	return [ Math.atan2(2 * (t[0] * t[1] + t[2] * t[3]), 1 - 2 * (t[1] * t[1] + t[2] * t[2])) * to_degrees, 
 			 Math.asin(Math.max(-1, Math.min(1, 2 * (t[0] * t[2] - t[3] * t[1])))) * to_degrees, 
 			 Math.atan2(2 * (t[0] * t[3] + t[1] * t[2]), 1 - 2 * (t[2] * t[2] + t[3] * t[3])) * to_degrees
-			]
+			];
 }
 
 /*  This function computes the euler angles when given two vectors, and a rotation

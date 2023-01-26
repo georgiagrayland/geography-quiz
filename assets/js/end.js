@@ -31,7 +31,7 @@ function showResultMessage() {
         return "Above average, you have good knowledge but aren't a geography genius yet!";
     } else if (mostRecentScore == 1000) {
         return "Incredible, you really know your important geography knowledge";
-    };
+    }
 }
 
 /**Saving scores for the leaderboard section*/

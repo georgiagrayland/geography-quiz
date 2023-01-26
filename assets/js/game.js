@@ -3,7 +3,6 @@ const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
-const gameContainer = document.querySelector("#conatiner");
 
 
 //Game variables
@@ -145,20 +144,19 @@ function setTimer(){
             s = 0;
             m++;
             seconds = "0" + s;
-          };
+          }
 
           if (m > 59) {
             m = 0;
             h++;
             minutes = "00";
-          };
+          }
         
           seconds = s > 9 ? s : "0" + s;
           minutes = m > 9 ? m : "0" + m;
           hours = h > 9 ? h : "0" + h;
 
-          timeSpent = h 
-            ? hours + ":" + minutes + ":" + seconds
+          timeSpent = h ? hours + ":" + minutes + ":" + seconds
             : minutes + ":" + seconds;
           timer.textContent = timeSpent;
           timeSpentNumber = JSON.stringify(timeSpent);
@@ -222,7 +220,7 @@ choices.forEach(choice => {
             question.style.color = 'red';
             setTimeout(function(){
             }, 6000);
-        };
+        }
 
         selectedChoice.parentElement.classList.add(classToApply);
         
