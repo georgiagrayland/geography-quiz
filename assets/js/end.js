@@ -5,13 +5,13 @@ const saveScore = document.querySelector('#save-score');
 const finalScore = document.querySelector('#final-score');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const resultMessage = document.querySelector('#result-message');
-const timeMessage = document.querySelector("#time-spent");
+//const timeMessage = document.querySelector("#time-spent");
 
 const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 
 finalScore.innerText = mostRecentScore;
-timeMessage.innerText = timeSpent;
+//timeMessage.innerText = timeSpent;
 resultMessage.innerHTML = showResultMessage();
 
 username.addEventListener("keyup", () => {
