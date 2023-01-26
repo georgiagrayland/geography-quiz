@@ -12,7 +12,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let timeSpent;
+let timeSpent = 0;
 
 
 //Setting questions
@@ -162,7 +162,7 @@ function setTimer(){
             : minutes + ":" + seconds;
           timer.textContent = timeSpent;
           timeSpentNumber = JSON.stringify(timeSpent);
-          localStorage.setItem("timeSpent", timeSpentNumber);
+          localStorage.setItem('timeSpentNumber', timeSpent);
         }, 1000);
 }
 

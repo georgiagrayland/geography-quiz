@@ -235,15 +235,22 @@ h2
     color: #1B0C44;
 }
 
-#final-score, #time-spent
+#final-score
 {
     font-size: 4rem;
     color: #050505;
     padding-top: 10px;
 }
 
+
 #time-title
 {
+    font-size: 3rem;
+}
+
+#time-spent
+{
+    color: #050505;
     font-size: 3rem;
 }
 
@@ -258,7 +265,7 @@ h2
 
 #end-text
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #050505;
     text-align: center;
 }
@@ -280,7 +287,7 @@ input::placeholder
 
 #username
 {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     width: 100%;
 }
 

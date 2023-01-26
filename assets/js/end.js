@@ -5,15 +5,15 @@ const saveScore = document.querySelector('#save-score');
 const finalScore = document.querySelector('#final-score');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const resultMessage = document.querySelector('#result-message');
-let timeSpentNumber = localStorage.getItem("timeSpent")
-let timeSpent = JSON.parse("timeSpentNumber");
-let elapsedTime = document.getElementById("time-spent").innerHTML;
+const timeSpentNumber = localStorage.getItem('timeSpentNumber');
+//let timeSpent = JSON.parse("timeSpentNumber");
+let elapsedTime = document.getElementById("time-spent");
 
 const highScores = JSON.parse(localStorage.getItem('high-scores')) || [];
 
 
 finalScore.innerText = mostRecentScore;
-elapsedTime = timeSpent;
+elapsedTime.innerText = timeSpentNumber;
 resultMessage.innerHTML = showResultMessage();
 
 username.addEventListener("keyup", () => {
