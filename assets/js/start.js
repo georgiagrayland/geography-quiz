@@ -20,7 +20,7 @@ anime.timeline({loop: true})
   });
 
 //Globe animation
-// Credit for the original of this visual is Stranger in the Q on Codepen: https://codepen.io/strangerintheq/pen/zXVpQw
+// Credit for the original version of this is Stranger in the Q on Codepen: https://codepen.io/strangerintheq/pen/zXVpQw
 var w, h, scl, is3d = true; 
 var svg = d3.select("#svgDiv").append("svg")
 var projection = d3.geoOrthographic();
@@ -61,7 +61,7 @@ d3.json("https://gist.githubusercontent.com/sarah37/dcca42b936545d9ee9f0bc8052e0
 let resize = () => {
     w = window.innerWidth;
     h = window.innerHeight;
-    scl = Math.min(w, h)/2.5;
+    scl = Math.min(w, h)/2;
     projection.translate([ w/2, h/2 ]);
     svg.attr("width", w).attr("height", h);
     map.selectAll("path").attr("d", path);

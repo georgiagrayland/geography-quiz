@@ -27,7 +27,7 @@ body
     margin: 0 auto;
     /*width: 75rem;*/
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 320px 320px;
     /*grid-row: auto auto;*/
     grid-row: 60%;
     grid-column-gap: 15px;
@@ -43,7 +43,7 @@ body
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 110%;
+    height: 90%;
     margin: 0 auto;
     margin-bottom: 0.8rem;
     /*width: 98%;*/
@@ -70,6 +70,7 @@ body
     font-size: 2.7rem;
     color: #cb1390;
     padding-right: 10px;
+    margin-bottom: 0;
 }
 
 #question
@@ -79,6 +80,8 @@ body
     font-size: 3.1rem;
     margin-left: 15px;
     padding-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /** Styling of answer choices */

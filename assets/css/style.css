@@ -8,7 +8,7 @@
 
 *
 {
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
     font-size: 62.5%;
@@ -30,11 +30,12 @@ body
 
 h1
 {
+    /*margin-top: 100px;*/
     text-align: center;
     font-size: 5.4rem;
     color: black;
     overflow: hidden;
-    margin-bottom: 4rem;
+    /*margin-bottom: 4rem;*/
 }
 
 /* Animation for title 
@@ -68,14 +69,18 @@ Credit for this animation: Tobias Ahlin Moving letters - https://tobiasahlin.com
 
   #svgDiv
   {
-    height: 500px;
+    padding-top: 5px;
+    margin: 0 auto;
+    height: 300px;
+    width: 100%;
   }
+
   .ocean {
 	fill: #fff;
 }
 
 .land {
-	fill: #1F4F9E;
+	fill: #4185F6;
 }
 
 .boundary {
@@ -83,7 +88,7 @@ Credit for this animation: Tobias Ahlin Moving letters - https://tobiasahlin.com
 	stroke: black;
 	stroke-linejoin: round;
 	stroke-linecap: round;
-	vector-effect: non-scaling-stroke;
+	/*vector-effect: non-scaling-stroke;*/
 }
 
 /*Rest of landing page */
@@ -225,29 +230,26 @@ h2
 
 #score-title
 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     padding-top: 60px;
     color: #1B0C44;
 }
 
-#final-score
+#final-score, #time-spent
 {
-    font-size: 5.3rem;
+    font-size: 4rem;
     color: #050505;
     padding-top: 10px;
 }
 
-#time-spent
+#time-title
 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #050505;
-    text-align: center;
+    font-size: 3rem;
 }
 
 #result-message
 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     font-weight: bold;
     color: #050505;
     padding-bottom: 10px;
@@ -292,4 +294,12 @@ input::placeholder
     margin-left: 0.7rem;
     font-size: 2.3rem;
     color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    input{
+        max-width: 95%;
+    }
 }
