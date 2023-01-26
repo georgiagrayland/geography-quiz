@@ -27,7 +27,7 @@ body
     margin: 0 auto;
     /*width: 75rem;*/
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 300px 300px;
     /*grid-row: auto auto;*/
     grid-row: 60%;
     grid-column-gap: 15px;
@@ -58,16 +58,16 @@ body
     padding-top: 10px;
 }
 
-.hud-prefix, #score
+.hud-prefix
 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     color: #000078;
     padding-right: 10px;
 }
 
-#question-timer
+#timer, #score
 {
-    font-size: 4rem;
+    font-size: 2.7rem;
     color: #cb1390;
     padding-right: 10px;
 }
@@ -87,7 +87,7 @@ body
 {
     cursor: pointer;
     box-shadow: 22px -19px 48px -3px rgba(0,0,0,0.75);
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: transform 100ms;
 }
 
@@ -103,7 +103,7 @@ body
 {
     padding: 1.9rem;
     width: 100%; 
-    display: block; /* NEW*/
+    display: block; 
     position: relative;
 }
 
