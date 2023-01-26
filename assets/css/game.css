@@ -29,7 +29,7 @@ body
     display: grid;
     grid-template-columns: 320px 320px;
     /*grid-row: auto auto;*/
-    grid-row: 60%;
+    /*grid-row: 60%;*/
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     align-items: center;
