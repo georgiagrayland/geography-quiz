@@ -19,7 +19,7 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-//Globe animation
+//Globe animation on home page 
 // Credit for the original version of this is Stranger in the Q on Codepen: https://codepen.io/strangerintheq/pen/zXVpQw
 var w, h, scl, is3d = true; 
 var svg = d3.select("#svgDiv").append("svg")
@@ -228,7 +228,6 @@ function quat2euler(t){
 }
 
 /*  This function computes the euler angles when given two vectors, and a rotation
-	This is really the only math function called with d3 code.
 
 	v0 - starting pos in lon/lat, commonly obtained by projection.invert
 	v1 - ending pos in lon/lat, commonly obtained by projection.invert
@@ -236,13 +235,6 @@ function quat2euler(t){
 */
 
 function eulerAngles(v0, v1, o0) {
-
-	/*
-		The math behind this:
-		- first calculate the quaternion rotation between the two vectors, v0 & v1
-		- then multiply this rotation onto the original rotation at v0
-		- finally convert the resulted quat angle back to euler angles for d3 to rotate
-	*/
 
 	var t = quatMultiply( euler2quat(o0), quaternion(lonlat2xyz(v0), lonlat2xyz(v1) ) );
 	return quat2euler(t);	

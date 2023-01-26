@@ -12,8 +12,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let timeSpent = timer.textContent;
-let colors = ['#00F800', '00E54B', '#00D4B0', '#00B7D8', '#188AF0', '#58B1A6', '#146CF6', '#C7EFE7', '#F6B472'];
+let timeSpent;
 
 
 //Setting questions
@@ -157,11 +156,13 @@ function setTimer(){
           seconds = s > 9 ? s : "0" + s;
           minutes = m > 9 ? m : "0" + m;
           hours = h > 9 ? h : "0" + h;
-    
+
           timeSpent = h 
             ? hours + ":" + minutes + ":" + seconds
             : minutes + ":" + seconds;
           timer.textContent = timeSpent;
+          timeSpentNumber = JSON.stringify(timeSpent);
+          localStorage.setItem("timeSpent", timeSpentNumber);
         }, 1000);
 }
 
