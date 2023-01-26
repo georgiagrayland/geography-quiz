@@ -16,7 +16,6 @@ body
 #game
 {
     background-color: #F8EAA2;
-    /*width: 1000px;*/
     width: 75rem;
     border-radius: 5px;
     padding-bottom: 20px;
@@ -25,11 +24,8 @@ body
 .game-container
 {
     margin: 0 auto;
-    /*width: 75rem;*/
     display: grid;
     grid-template-columns: 320px 320px;
-    /*grid-row: auto auto;*/
-    /*grid-row: 60%;*/
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     align-items: center;
@@ -46,7 +42,6 @@ body
     height: 90%;
     margin: 0 auto;
     margin-bottom: 0.8rem;
-    /*width: 98%;*/
     border-radius: 5px;
     font-size: 3rem;
     background-color: #080E82;

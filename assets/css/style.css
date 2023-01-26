@@ -1,14 +1,8 @@
 /**Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sanchez&display=swap');
 
-/*
-:root {
-    background-color: #0098DA;
-}*/
-
 *
 {
-    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
     font-size: 62.5%;
@@ -30,12 +24,10 @@ body
 
 h1
 {
-    /*margin-top: 100px;*/
     text-align: center;
     font-size: 5.4rem;
     color: black;
     overflow: hidden;
-    /*margin-bottom: 4rem;*/
 }
 
 /* Animation for title 
@@ -66,7 +58,6 @@ Credit for this animation: Tobias Ahlin Moving letters - https://tobiasahlin.com
   }
 
   /* Globe animation */
-
   #svgDiv
   {
     padding-top: 5px;

@@ -139,6 +139,7 @@ The Live Link can be found here: https://georgiagrayland.github.io/geography-qui
 ### Content
 - Inspiration for some of the quiz questions was taken from the [Edsys](https://www.edsys.in/geography-quiz-for-kids-107-questions-answers/#4) website.
 
+
 ### Code
 - I watched some walk along tutorials, and looked at online educational sources to help me understand the logic of functions that needed to be used. Code was used as demonstrated in some videos so that the functions in this project could work:
     - Some parts of the code were taken from a tutorial based on this project: https://github.com/briancodex/quiz-app-js. This has been accredited in the relevant parts of the code.  
@@ -146,6 +147,11 @@ The Live Link can be found here: https://georgiagrayland.github.io/geography-qui
     - [Mitchell Hudson](https://www.youtube.com/@MitchellHudson)
     - [W3C Schools](https://www.w3schools.com/js/default.asp)
 
+- The text animation on the home page is from Tobias Ahlin: [Moving letters](https://tobiasahlin.com/moving-letters/)
+
+- The original version of the Globe visual on the home page is from Stranger in the Q on Codepen: https://codepen.io/strangerintheq/pen/zXVpQw. I used this code and edited the sizing, ratio, and colors. 
+- The code and idea for most of the timer function is from: Madalin on Codepen: https://codepen.io/madalin_
+    - All of these have been credited in comments within the code with links included. 
 
 ### Media 
 - The background images were taken from [Unsplash](https://unsplash.com/)
