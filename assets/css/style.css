@@ -1,9 +1,10 @@
 /**Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sanchez&display=swap');
 
+/*
 :root {
     background-color: #0098DA;
-}
+}*/
 
 *
 {
@@ -17,21 +18,22 @@
 body
 {
     background-color: #8fddff;
+    height: fit-content;
 }
 
-/*
+
 body
 {
-    background-image: url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
-}*/
+}
 
 h1
 {
     text-align: center;
     font-size: 5.4rem;
     color: black;
+    overflow: hidden;
     margin-bottom: 4rem;
 }
 
@@ -62,11 +64,33 @@ Credit for this animation: Tobias Ahlin Moving letters - https://tobiasahlin.com
     font-size: 6rem;
   }
 
+  /* Globe animation */
+
+  #svgDiv
+  {
+    height: 500px;
+  }
+  .ocean {
+	fill: #fff;
+}
+
+.land {
+	fill: #1F4F9E;
+}
+
+.boundary {
+	fill: none;
+	stroke: black;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	vector-effect: non-scaling-stroke;
+}
+
 /*Rest of landing page */
 h2
 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
 }
 
 .container
@@ -138,7 +162,7 @@ h2
 .btn
 {
     font-size: 2.4rem;
-    padding: 2rem;
+    padding: 1.8rem;
     width: 30rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -202,21 +226,22 @@ h2
 #score-title
 {
     font-size: 4.5rem;
+    padding-top: 60px;
     color: #1B0C44;
 }
 
 #final-score
 {
-    font-size: 5.5rem;
+    font-size: 5.3rem;
     color: #050505;
+    padding-top: 10px;
 }
 
 #time-spent
 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #050505;
-    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -238,9 +263,9 @@ h2
 
 input
 {
-    margin-bottom: 1rem;
-    width: 20rem;
-    padding: 1.5rem;
+    margin-bottom: 0.4rem;
+    width: 18rem;
+    padding: 1.3rem;
     font-size: 1.8rem;
     border: 1.5px solid black;
     border-radius: 6px;
