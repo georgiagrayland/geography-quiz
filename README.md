@@ -1,8 +1,8 @@
 # Geography Quiz
 
-This quiz is designed to test geography knowledge. There are 10 questions of varying difficulty, and once an answer has been selected, the colour of the answer bar will change to green if the correct answer has been chosen and red if an incorrect option has been selected. There is also a high scores leaderboard and an option to enter your end score into this. 
+This quiz is designed to test geography knowledge. There are 10 questions of varying difficulty, and once an answer has been selected, the colour of the answer bar will change to green if the correct answer has been chosen and red if an incorrect option has been selected. A message will appear to inform the user of the correct answer and its context if they answered incorrectly. There is also a timer and a score counter so players can compare these with others. A high scores leaderboard is also available to see the top 5 scores.
 
-![Responsive Screens](/assets/images/responsive.png)
+![Responsive Screens](/assets/images/responsive.png) CHANGE THIS
 
 The live link can be found here: https://georgiagrayland.github.io/geography-quiz/
 
@@ -15,7 +15,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
 - As a user, I want to know what the game is about.
 - As a user, I want to access the game easily.
 - As a user, I want to easily navigate through the game site and see all components even on the first visit.
-- As a user, I want to be able to see my result after completing the quiz.
+- As a user, I want to be able to see my result and time after completing the quiz.
 - As a user, I want to be able to enter the high scores leaderboard by entering my name once seeing my result.
 
 ### Site Owner Goals
@@ -24,8 +24,8 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
 - As a site owner, I want to build a quiz game which users will want to share. 
 
 ### Design
-- Images chosen were in line with the theme, whilst also staying consistent in terms of the color scheme 
-- Colors scheme was chosen based on the theme of ‘geography’ with blue and green being typical colours of a map. 
+- Background images chosen were in line with the theme, whilst also staying consistent in terms of the color scheme 
+- Color scheme was chosen based on the theme of ‘geography’ with blue and green being typical colours of a map. 
 - Text color was chosen to contrast with the background colors to make the site readable and visually pleasing. 
 
 
@@ -36,8 +36,10 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
  - **Landing Page**
 
     - On the first page there is a heading and 3 sections to interact with. There is a clearly marked button which, once clicked, will display the rules and parameters for the quiz. Underneath this there is a ‘Play’ button which will enter the quiz questions when clicked, and a ‘High Scores’ button, which will take the user to the leaderboard of the 5 most recent high scores and who obtained them. 
+    - There is an animation on the Heading Text which constantly loops through.
+    - There is also an interactive globe animation which zooms in and out if the user scrolls over it. 
     
-    ![Homepage](/assets/images/homepage.png)
+    ![Homepage](/assets/images/homepage.png) CHANGE THIS 
 
     - **Rules Button:**
     The user is invited to click this button. Once clicked, new text will appear that displays simple rules for the game and how to play. 
