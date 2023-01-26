@@ -115,7 +115,7 @@ The live link can be found here: https://georgiagrayland.github.io/geography-qui
     - No errors detected when passed through JSHint - https://jshint.com/
 
 ### Lighthouse Testing
-![Lighthouse score](/assets/images/lighthouse.png
+![Lighthouse score](/assets/images/lighthouse.png)
 
 ### Known Bugs and Fixes
  - The first time parsing code through JSHint came with many warnings. Most of these were corrected when changing the configuration of JSHint to eversion: 6. 
